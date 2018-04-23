@@ -1,5 +1,6 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
+
 // Used the following DHT library: @link https://github.com/adafruit/DHT-sensor-library
 #include <DHT.h>
 #include <DHT_U.h>
@@ -12,18 +13,15 @@
 LiquidCrystal_I2C lcd(0x27,16,2);
 DHT dht(DHTPIN, DHTTYPE);
 
+/**
+ * Setup for initialising the lcd, backlight snd serial console
+ * and the DHT11 sensor.
+ */
 void setup()
 {
-  // Initialise the serial console
   Serial.begin(9600);
-
-  // Initialize the lcd
   lcd.init();
-
-  // Turn on LCD backlight.
   lcd.backlight();
-
-  // Initialise the DHT sensor
   dht.begin();
 }
 
