@@ -10,5 +10,4 @@ Below is a summary list of each experiment but each directory has its own README
 
 1. **exp-001** - A very basic flashing red LED.
 2. **exp-002** - An LED that takes an analog reading from a potentiometer and changes the flashing rate accordingly.
-3. **exp-003** - Using knowledge of analog innputs learnt form previous experiments create a basic LPG gas sensor. This sensor was tested and claibrated using the gas from a lighter.
-4. **exp-004** - Showing the humidity and temperature of a DHT11 sensor via analog inputs to the serial console.
+3. **exp-003** - Showing the humidity and temperature of a DHT11 sensor via analog inputs to the serial console.
